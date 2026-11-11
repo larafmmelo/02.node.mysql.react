@@ -1,0 +1,95 @@
+### 1. LISTAR LIVROS
+GET http://localhost:3000/livros
+
+###
+### 2. BUSCAR LIVRO POR ID
+GET http://localhost:3000/livros/1
+
+###
+### 3. CADASTRAR LIVRO
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+  "titulo": "Dominando Node.js Moderno",
+  "autor": "Joana Pereira",
+  "preco": 59.90,
+  "estoque": 10
+}
+
+###
+### 4. ATUALIZAR LIVRO
+PUT http://localhost:3000/livros/1
+Content-Type: application/json
+
+{
+  "titulo": "Introdução ao SQL - Revisada",
+  "autor": "Mauro Souza",
+  "preco": 54.90,
+  "estoque": 12
+}
+
+###
+### 5. REMOVER LIVRO
+DELETE http://localhost:3000/livros/3
+
+###
+### 6. LISTAR CLIENTES DA LIVRARIA
+GET http://localhost:3000/livraria/clientes
+
+###
+### 7. LISTAR PEDIDOS DA LIVRARIA
+GET http://localhost:3000/pedidos-livraria
+
+###
+### 8. LISTAR CLIENTES DA LOJA DE INFORMÁTICA
+GET http://localhost:3000/loja/clientes
+
+###
+### 9. CADASTRAR PRODUTO NA LOJA
+POST http://localhost:3000/loja/produtos
+Content-Type: application/json
+
+{
+  "nome": "Teclado mecânico",
+  "marca": "Logitech",
+  "categoria": "Acessório",
+  "preco": 299.90,
+  "estoque": 8
+}
+
+###
+### 10. LISTAR PEDIDOS DA LOJA
+GET http://localhost:3000/loja/pedidos
+
+###
+### 11. LISTAR DESTINOS TURÍSTICOS
+GET http://localhost:3000/viagens/destinos
+
+###
+### 12. LISTAR PACOTES DE VIAGEM
+GET http://localhost:3000/viagens/pacotes
+
+###
+### 13. LISTAR FORNECEDORES
+GET http://localhost:3000/estoque/fornecedores
+
+###
+### 14. LISTAR PRODUTOS DO ESTOQUE
+GET http://localhost:3000/estoque/produtos
+
+###
+### 15. LISTAR IDENTIFICAÇÕES
+GET http://localhost:3000/estoque/identificacoes
+
+###
+### 16. LISTAR FILIAIS
+GET http://localhost:3000/estoque/filiais
+
+###
+### 17. LISTAR ITENS DE ESTOQUE
+GET http://localhost:3000/estoque/itens
+
+###
+### 18. BUSCAR ITEM DE ESTOQUE PELA CHAVE COMPOSTA
+GET http://localhost:3000/estoque/itens/1/12.345.678%2F0001-90
